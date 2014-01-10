@@ -15,7 +15,7 @@ The user execution envelope (binary, arguments, input files, output files, …) 
 
 2. Instalation
 
-Execute the following instruction under your bash environment. Otherwise, adjust them to the proper shell environment you are working with.
+Py4Grid should be deployed on top of a UMD 2 or UMD 3 User Interface. It has been tested with Python 2.6. To install it, execute the following instruction substituint X.X.X but the proper Py4Grid version (bash environment is assumed):
 - wget https://github.com/GoncaloBorges/Py4Grid/archive/master.zip
 - unzip master.zip
 - cd Py4Grid-master
