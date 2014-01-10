@@ -13,6 +13,15 @@ Users can submit, copy, delete and retrieve grid jobs and input/output data thro
 - Py4Grid-JobGetOutput.py: retrieve job outputs and transparent transfer of big data output files back to the user;
 - Py4Grid-JobDelete.py: job and file purging. 
 
-The user execution envelope (binary, arguments, input files, output files, …) are defined through a simple “key=value” configuration file (Py4Grid.cfg) read by the application.
+The user execution envelope (binary, arguments, input files, output files, …) are defined through a simple “key=value” configuration file (Py4Grid.cfg) read by the application. The Py4Grid application is responsible for building the JDLs and prolog and epilog scripts dealing with data transfers. 
 
 3. Instalation
+
+Execute the following instruction under your bash environment. Otherwise, adjust them to the proper shell environment you are working with.
+- Download the py4grid-X.X.X.tgz
+- tar xzvf py4grid-X.X.X.tgz
+- export PYTHONPATH=$PWD/py4grid/X.X.X/include/Py4GridModules:$PYTHONPATH
+- export PATH=$PWD/py4grid/X.X.X/bin:$PATH
+- export PY4GRIDHOME=$PWD/py4grid/X.X.X
+- cp $PY4GRIDHOME/templates/config/Py4Grid.cfg .
+- vi Py4Grid.cfg (adjust your execution envelope)
